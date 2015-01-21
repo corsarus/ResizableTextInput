@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bNI-Cz-la7">
+                                <rect key="frame" x="16" y="211" width="48" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="36" id="WRK-AE-Len"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="48" id="Xco-Cx-Qaa"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="42" minValue="12" maxValue="72" translatesAutoresizingMaskIntoConstraints="NO" id="Kg1-E6-Gaa">
+                                <rect key="frame" x="14" y="28" width="572" height="31"/>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Kg1-E6-Gaa" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="1YR-Ld-lkW"/>
+                            <constraint firstItem="bNI-Cz-la7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="2Jp-uj-Hwx"/>
+                            <constraint firstAttribute="rightMargin" relation="greaterThanOrEqual" secondItem="bNI-Cz-la7" secondAttribute="right" id="HER-qy-Vvb"/>
+                            <constraint firstAttribute="centerY" secondItem="bNI-Cz-la7" secondAttribute="centerY" constant="64" id="PVv-D7-8W4"/>
+                            <constraint firstAttribute="centerX" secondItem="Kg1-E6-Gaa" secondAttribute="centerX" id="YBz-Nd-7DG"/>
+                            <constraint firstItem="Kg1-E6-Gaa" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="ck5-3V-MsK"/>
+                            <constraint firstItem="Kg1-E6-Gaa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="hB1-wa-iDN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="fontSizeSlider" destination="Kg1-E6-Gaa" id="M4K-xh-glj"/>
+                        <outlet property="textInput" destination="bNI-Cz-la7" id="Qx8-bq-ac4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
